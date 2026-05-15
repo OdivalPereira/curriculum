@@ -35,61 +35,61 @@ interface AIResult {
 
 const experience = [
   {
-    role: "Contador Sênior & Desenvolvedor",
-    company: "Setor Contábil / Autólogo",
-    period: "2020 - Presente",
-    description: "Responsável por toda a rotina contábil e fiscal, além do desenvolvimento de ferramentas integradas para automação de processos contábeis e melhoria de performance.",
-    technologies: ["Contabilidade", "Fiscal", "Python", "Automação"],
+    role: "Encarregado do Departamento Contábil",
+    company: "Douralex Contabilidade LTDA",
+    period: "Abril/2025 – Março/2026",
+    description: "Liderança da equipe contábil e supervisão técnica de fechamentos, garantindo a integridade dos dados e o cumprimento de prazos. Implementação de estratégias de compliance para adaptação à Reforma Tributária.",
+    technologies: ["Gestão", "Compliance", "Reforma Tributária"],
   },
   {
-    role: "Analista Contábil Pleno",
-    company: "Consultoria Financeira",
-    period: "2016 - 2020",
-    description: "Fechamento contábil, análise de balanços, apuração de impostos e entrega de obrigações acessórias. Implementação de scripts em VBA/Python para redução de trabalho manual.",
-    technologies: ["Tributário", "Obrigações", "Excel/VBA", "Scripts"],
+    role: "Encarregado do Departamento Contábil",
+    company: "Planacont Escritório Contábil LTDA",
+    period: "Maio/2024 – Abril/2025",
+    description: "Gestão integral dos setores contábil e rural, atendendo uma carteira diversificada de empresas e produtores rurais da região de Dourados. Estruturação de rotinas internas e suporte consultivo especializado.",
+    technologies: ["Contabilidade Rural", "Gestão de Setores", "Consultoria"],
   },
   {
-    role: "Assistente Contábil",
-    company: "Empresa de Auditoria",
-    period: "2013 - 2016",
-    description: "Lançamentos contábeis, conciliação bancária e suporte geral à auditoria externa, garantindo a conformidade dos dados financeiros.",
-    technologies: ["Lançamentos", "Conciliação", "Auditoria", "ERP"],
+    role: "Contador Sênior / Supervisor",
+    company: "Carlos Augusto Bezerra Tavares LTDA (Contacar)",
+    period: "Setembro/2022 – Dezembro/2023",
+    description: "Gestão dos setores contábil, fiscal, rural e pessoal. Supervisão técnica de carteira de clientes corporativos de médio e grande porte. Foco em planejamento tributário estratégico e regularização de passivos contábeis.",
+    technologies: ["Planejamento Tributário", "Fiscal", "Gestão de Equipe"],
+  },
+  {
+    role: "Analista Fiscal",
+    company: "Rede SHZ (Administração / Postos)",
+    period: "Maio/2020 – Janeiro/2022",
+    description: "Apuração de tributos indiretos e gestão de conformidade fiscal para redes de combustíveis.",
+    technologies: ["Tributos Indiretos", "Conformidade Fiscal", "Combustíveis"],
   }
 ];
 
 const projects = [
   {
-    title: "Automação de Notas Fiscais",
-    description: "Ferramenta desenvolvida para extração automática de dados de NFs e importação direta para o sistema contábil ERP.",
+    title: "Auditor Contábil Premium",
+    description: "Plataforma web robusta para integração entre cliente e contador, com foco em conciliação contábil automatizada, migrações de banco de dados e implementação de funcionalidades estratégicas.",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800",
-    tags: ["Python", "Automação", "ERP"],
+    tags: ["React", "Automation", "DB Migration"],
     link: "#"
   },
   {
-    title: "Dashboard Financeiro",
-    description: "Painel interativo para análise de indicadores financeiros (EBITDA, Liquidez) alimentado em tempo real pelos dados da contabilidade.",
+    title: "Mix Credit Guru",
+    description: "Sistema de simulação avançada para análise técnica do impacto da Reforma Tributária (IBS/CBS).",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    tags: ["React", "TypeScript", "Tailwind"],
+    tags: ["Reforma Tributária", "IBS/CBS", "Simulation"],
     link: "#"
   },
   {
-    title: "Sistema de Conciliação",
-    description: "Aplicação construída para automatizar o processo de conciliação cruzando extratos bancários com o razão contábil de forma inteligente.",
+    title: "Soluções em Python",
+    description: "Desenvolvimento de scripts personalizados para tratamento massivo de dados fiscais e automação de rotinas repetitivas.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    tags: ["Python", "Lógica", "Desenvolvimento"],
-    link: "#"
-  },
-  {
-    title: "Validador SPED Fiscal",
-    description: "Script para pré-validação de arquivos do SPED Fiscal antes do envio, identificando inconsistências comuns de forma rápida.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
-    tags: ["Tributos", "Script", "Excel"],
+    tags: ["Python", "Data Processing", "Automation"],
     link: "#"
   }
 ];
 
 const skills = [
-  "Contabilidade", "Fiscal", "Tributário", "Python", "React", "Automação", "Excel Avançado", "SQL", "Análise de Dados"
+  "Gestão Contábil", "Contabilidade Rural", "LCDPR", "ITR", "Área Fiscal", "Lucro Real/Presumido", "Simples Nacional", "EFD-REINF", "DCTFWeb", "e-Social", "Python", "Domínio Contábil", "Prosoft", "Alterdata"
 ];
 
 function Hero() {
@@ -101,16 +101,15 @@ function Hero() {
         transition={{ duration: 0.6 }}
       >
         <p className="text-sm font-mono tracking-widest uppercase text-slate-500 mb-4 hidden">Hello, I am</p>
-        <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-emerald-400 rounded-full mb-4 flex items-center justify-center text-3xl font-bold text-white">OD</div>
+        <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-emerald-400 rounded-full mb-4 flex items-center justify-center text-3xl font-bold text-white">OM</div>
         <h1 className="text-3xl font-bold tracking-tight text-white leading-tight">
           Odival. <br className="hidden" />
           <span className="hidden">Software Engineer.</span>
         </h1>
-        <p className="text-indigo-400 font-mono text-sm mt-1">Contador & Desenvolvedor de Ferramentas</p>
+        <p className="text-indigo-400 font-mono text-sm mt-1">Contador & Encarregado Contábil</p>
         <p className="text-slate-400 text-sm mt-4 leading-relaxed">
-          Sou contador de profissão com forte base técnica em programação.
-          Atuo unindo minha expertise contábil ao desenvolvimento de ferramentas 
-          excepcionais para automação e análise de dados no setor financeiro.
+          Contador com vasta experiência na gestão integral de departamentos contábeis e rurais. 
+          Embora possua sólida base nas áreas fiscal e pessoal, meu foco principal é a liderança técnica de fechamentos, aliando tecnologia Python para automação de rotinas contábeis complexas.
         </p>
 
         <div className="flex gap-3 mt-6">
@@ -463,6 +462,26 @@ function RadarContabil() {
   );
 }
 
+function Education() {
+  return (
+    <section id="education" className="bg-[#1A1D24] border border-slate-800 rounded-2xl p-6">
+       <h3 className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-6 flex items-center gap-2">
+         Formação Acadêmica
+       </h3>
+       <div className="space-y-6">
+          <div>
+            <h4 className="text-sm font-semibold text-white">Bacharelado em Ciências Contábeis</h4>
+            <p className="text-xs text-slate-400 mt-1">UNIPRUDENTE / Faculdade de Ponta Porã</p>
+          </div>
+          <div>
+            <h4 className="text-sm font-semibold text-white">MBA em Gestão Tributária</h4>
+            <p className="text-xs text-emerald-400 mt-1 font-mono uppercase tracking-tighter">Em andamento</p>
+          </div>
+       </div>
+    </section>
+  );
+}
+
 function Contact() {
   return (
     <section id="contact" className="bg-[#1A1D24] border border-slate-800 rounded-2xl p-6 flex-1 flex flex-col">
@@ -482,6 +501,8 @@ function Contact() {
              <a href="mailto:odivalmp@gmail.com" className="inline-block px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded text-xs font-bold uppercase tracking-widest transition-colors">
                odivalmp@gmail.com
              </a>
+             <p className="text-xs font-mono text-slate-500 mt-4">(67) 9 9978-5868</p>
+             <p className="text-xs font-mono text-slate-500 mt-1">CRC: MS 013760/O-7</p>
           </div>
 
           <div className="mt-auto pt-6 border-t border-slate-800">
@@ -499,7 +520,7 @@ function Contact() {
              
              <div className="flex items-center gap-2 mt-6 text-slate-400">
                 <MapPin size={16} className="text-emerald-500" />
-                <span className="text-xs font-mono uppercase tracking-wider text-slate-500">Remote / Earth</span>
+                <span className="text-xs font-mono uppercase tracking-wider text-slate-500">Dourados, MS</span>
              </div>
           </div>
        </motion.div>
@@ -513,7 +534,7 @@ function Navbar() {
       <div className="max-w-[1024px] mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#about" className="text-white font-bold text-xl tracking-tight flex items-center gap-2">
            <span className="w-6 h-6 rounded bg-indigo-500 text-[10px] flex items-center justify-center text-white">O.</span>
-           Odival
+           Odival Martins
         </a>
         <div className="hidden md:flex gap-8 text-xs font-mono uppercase tracking-widest font-bold text-slate-500">
            <a href="#about" className="hover:text-white transition-colors">Sobre</a>
@@ -534,6 +555,7 @@ export default function App() {
       <div className="max-w-[1024px] mx-auto px-4 sm:px-6 pb-12 flex flex-col lg:flex-row gap-8">
         <aside className="w-full lg:w-1/3 flex flex-col gap-6">
           <Hero />
+          <Education />
           <Contact />
         </aside>
         
@@ -545,7 +567,7 @@ export default function App() {
           <footer className="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-600 uppercase tracking-widest font-bold gap-4">
             <span>Curriculum v1.0.0</span>
             <span>Built with React & Tailwind</span>
-            <span>© {new Date().getFullYear()} Odival</span>
+            <span>© {new Date().getFullYear()} Odival Martins Pereira</span>
           </footer>
         </main>
       </div>
