@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "Odival Martins",
+    "subtitle": "Accounting Manager & Analyst",
+    "tagline": "With expertise in Python and Tax Automation",
+    "description": "Accounting professional with vast experience in closing routines, reconciliation, and direct/indirect tax calculation. Competitive advantage in process automation via Python and AI to transform manual work hours into efficient and secure routines.",
+    "contactBtn": "Get in touch",
+    "projectsBtn": "View Projects"
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "ai": "AI Assistant",
+    "contact": "Contact"
+  }
+}

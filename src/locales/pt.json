@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "Odival Martins",
+    "subtitle": "Encarregado & Analista Contábil",
+    "tagline": "Com expertise em Python e Automações Fiscais",
+    "description": "Profissional contábil com vasta experiência em rotinas de fechamento, conciliação e apuração de tributos diretos e indiretos. Diferencial em automação de processos via Python e IA para transformar horas de trabalho manual em rotinas eficientes e seguras.",
+    "contactBtn": "Entrar em contato",
+    "projectsBtn": "Ver Projetos"
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "ai": "Assistente IA",
+    "contact": "Contato"
+  }
+}
