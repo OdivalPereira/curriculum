@@ -70,7 +70,7 @@ export function MediaSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
-                className="border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 rounded-xl p-5 flex flex-col items-center justify-center min-h-[160px] text-center cursor-pointer group relative overflow-hidden"
+                className="border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 rounded-xl p-5 flex flex-col items-center justify-center min-h-[160px] text-center cursor-pointer group relative overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="w-12 h-12 bg-red-100 dark:bg-red-500/10 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform relative z-10">

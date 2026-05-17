@@ -36,7 +36,7 @@ export function Experience() {
   }, []);
 
   return (
-    <section id="experience" className="bg-white dark:bg-[#1A1D24] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xl">
+    <section id="experience" className="bg-white dark:bg-[#1A1D24] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xl hover:border-indigo-500/30 transition-colors duration-300">
       <h2 className="text-xl font-semibold mb-6 flex items-center gap-2 text-slate-900 dark:text-white">
         <Briefcase size={20} className="text-indigo-500" />
         Experiência Profissional
