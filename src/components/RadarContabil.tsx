@@ -172,14 +172,14 @@ export function RadarContabil() {
               <button
                 type="button"
                 onClick={() => setResponseMode('completa')}
-                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'completa' ? 'bg-indigo-500 text-white shadow-md' : 'text-slate-500 hover:text-slate-700 dark:text-slate-300'}`}
+                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'completa' ? 'bg-indigo-500 text-white shadow-md' : 'text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'}`}
               >
                 Detalhada
               </button>
               <button
                 type="button"
                 onClick={() => setResponseMode('simples')}
-                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'simples' ? 'bg-emerald-500 text-white shadow-md' : 'text-slate-500 hover:text-slate-700 dark:text-slate-300'}`}
+                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'simples' ? 'bg-emerald-500 text-white shadow-md' : 'text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'}`}
               >
                 Direta & Simples
               </button>

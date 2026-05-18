@@ -29,7 +29,7 @@ export function Home() {
           <footer className="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-500 dark:text-slate-600 uppercase tracking-widest font-bold gap-4">
             <span>Curriculum v2.0.0</span>
             <span>Built with React & Tailwind</span>
-            <span>© {new Date().getFullYear()} Odival Martins Pereira</span>
+            <span>© {new Date().getFullYear()} Odival M. Pereira</span>
           </footer>
         </main>
       </div>

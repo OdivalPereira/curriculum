@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Github, Linkedin, MapPin, User } from 'lucide-react';
+import { Linkedin, MapPin, User } from 'lucide-react';
 
 export function Contact() {
   return (
@@ -27,13 +27,9 @@ export function Contact() {
           <div className="mt-auto pt-6 border-t border-slate-200 dark:border-slate-800">
              <h3 className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-4">Perfis</h3>
              <div className="space-y-2">
-                <a href="#" className="flex items-center gap-3 p-2 rounded-lg bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-                    <Github size={14} className="text-slate-600 dark:text-slate-400" />
-                    <span className="text-xs font-mono text-slate-600 dark:text-slate-400">github.com/odival</span>
-                </a>
-                <a href="#" className="flex items-center gap-3 p-2 rounded-lg bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <a href="https://www.linkedin.com/in/odival-martins-pereira-6468a1a1" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-2 rounded-lg bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                     <Linkedin size={14} className="text-slate-600 dark:text-slate-400" />
-                    <span className="text-xs font-mono text-slate-600 dark:text-slate-400">linkedin.com/in/odival</span>
+                    <span className="text-xs font-mono text-slate-600 dark:text-slate-400">linkedin.com/in/odival-martins-pereira-6468a1a1</span>
                 </a>
              </div>
              

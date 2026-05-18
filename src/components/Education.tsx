@@ -27,7 +27,7 @@ export function Education() {
         } else {
           // Fallback data se o banco estiver vazio ou falhar
           setEducationItems([
-            { id: '1', degree: 'Bacharelado em Ciências Contábeis', institution: 'UNIPRUDENTE / Faculdade de Ponta Porã' },
+            { id: '1', degree: 'Bacharelado em Ciências Contábeis', institution: 'Faculdade de Ponta Porã' },
             { id: '2', degree: 'MBA em Gestão Tributária', institution: 'Em andamento' }
           ]);
         }
@@ -35,7 +35,7 @@ export function Education() {
         console.error('Error fetching education:', err);
         // Fallback
         setEducationItems([
-          { id: '1', degree: 'Bacharelado em Ciências Contábeis', institution: 'UNIPRUDENTE / Faculdade de Ponta Porã' },
+          { id: '1', degree: 'Bacharelado em Ciências Contábeis', institution: 'Faculdade de Ponta Porã' },
           { id: '2', degree: 'MBA em Gestão Tributária', institution: 'Em andamento' }
         ]);
       } finally {

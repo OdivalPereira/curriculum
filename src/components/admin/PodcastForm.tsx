@@ -14,7 +14,7 @@ export function PodcastForm() {
   const [shows, setShows] = useState<Show[]>([]);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
-  const [newShow, setNewShow] = useState({ title: '', slug: '', description: '', author: 'Odival Pereira' });
+  const [newShow, setNewShow] = useState({ title: '', slug: '', description: '', author: 'Odival M. Pereira' });
 
   useEffect(() => {
     fetchShows();
@@ -38,7 +38,7 @@ export function PodcastForm() {
       const slugValue = newShow.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
       const { error } = await supabase.from('podcast_shows').insert([{ ...newShow, slug: slugValue }]);
       if (!error) {
-        setNewShow({ title: '', slug: '', description: '', author: 'Odival Pereira' });
+        setNewShow({ title: '', slug: '', description: '', author: 'Odival M. Pereira' });
         await fetchShows();
       } else {
         alert('Erro ao adicionar: ' + error.message);
