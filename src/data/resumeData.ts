@@ -54,5 +54,5 @@ export const projects = [
 ];
 
 export const skills = [
-  "Gestão Contábil", "Contabilidade Rural", "LCDPR", "ITR", "Área Fiscal", "Lucro Real/Presumido", "Simples Nacional", "EFD-REINF", "DCTFWeb", "e-Social", "Python", "Domínio Contábil", "Prosoft", "Alterdata"
+  "Gestão Contábil", "Contabilidade Rural", "LCDPR", "ITR", "Área Fiscal", "Lucro Real/Presumido", "Simples Nacional", "EFD-REINF", "DCTFWeb", "e-Social", "Planejamento Tributário", "Compliance Tributário", "Auditoria Contábil", "IBS/CBS", "Tributos Indiretos", "Gestão de Equipes", "Liderança", "Python", "Domínio Contábil", "Prosoft", "Alterdata"
 ];

@@ -15,7 +15,7 @@ export function Navbar() {
       <div className="max-w-[1024px] mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#about" className="text-slate-900 dark:text-white font-bold text-xl tracking-tight flex items-center gap-2">
            <span className="w-6 h-6 rounded bg-indigo-500 text-[10px] flex items-center justify-center text-white">O.</span>
-           Odival Martins
+           Odival M. Pereira
         </a>
         <div className="hidden md:flex gap-8 text-xs font-mono uppercase tracking-widest font-bold text-slate-500">
            <a href="#about" className="hover:text-slate-900 dark:hover:text-white transition-colors">{t('nav.about')}</a>

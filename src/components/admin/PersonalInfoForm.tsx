@@ -15,7 +15,6 @@ export function PersonalInfoForm() {
     phone: '',
     location: '',
     linkedin_url: '',
-    github_url: '',
     instagram_url: '',
   });
 
@@ -61,7 +60,6 @@ export function PersonalInfoForm() {
           phone: formData.phone,
           location: formData.location,
           linkedin_url: formData.linkedin_url,
-          github_url: formData.github_url,
           instagram_url: formData.instagram_url,
           updated_at: new Date().toISOString()
         })

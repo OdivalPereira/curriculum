@@ -7,7 +7,7 @@ interface Experience {
   id: string;
   role: string;
   company: string;
-  period: string;
+  period_text: string;
   description: string;
   technologies: string[];
 }
@@ -58,7 +58,7 @@ export function Experience() {
             <div className={`absolute -left-1.5 top-1.5 w-3 h-3 rounded-full ${index === 0 ? 'bg-indigo-500' : 'bg-slate-700'}`}></div>
             <div className="flex flex-col sm:flex-row justify-between gap-1">
               <h4 className="text-slate-900 dark:text-white font-medium">{exp.company}</h4>
-              <span className="text-xs font-mono text-indigo-600 dark:text-indigo-400">{exp.period}</span>
+              <span className="text-xs font-mono text-indigo-600 dark:text-indigo-400">{exp.period_text}</span>
             </div>
             <p className="text-xs text-slate-600 dark:text-slate-500 mt-1 uppercase font-bold">{exp.role}</p>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-2">

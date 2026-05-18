@@ -45,8 +45,8 @@ export function Skills() {
         } else {
           // Fallback Languages
           setLanguages([
-            { id: '1', name: 'Inglês', proficiency: 'Intermediário' },
-            { id: '2', name: 'Espanhol', proficiency: 'Básico' }
+            { id: '1', name: 'Inglês', proficiency: 'Avançado' },
+            { id: '2', name: 'Espanhol', proficiency: 'Intermediário' }
           ]);
         }
       } catch (err) {
