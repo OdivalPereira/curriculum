@@ -81,8 +81,8 @@ export function RadarContabil() {
     const { title, type, data } = result.chart;
 
     return (
-      <div className="bg-[#1A1D24] border border-slate-800 rounded-xl p-5 mt-6 shadow-sm">
-        <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-6">{title}</h3>
+      <div className="bg-white dark:bg-[#1A1D24] border border-slate-200 dark:border-slate-800 rounded-xl p-5 mt-6 shadow-sm">
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-6">{title}</h3>
         <div className="h-64 w-full text-xs">
           <ResponsiveContainer width="100%" height="100%">
             {type === 'bar' ? (
@@ -133,17 +133,17 @@ export function RadarContabil() {
   const renderTimeline = () => {
     if (!result?.timeline || !result.timeline.items || result.timeline.items.length === 0) return null;
     return (
-      <div className="bg-[#1A1D24] border border-slate-800 rounded-xl p-6 mt-6 shadow-sm">
-        <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-8">{result.timeline.title}</h3>
+      <div className="bg-white dark:bg-[#1A1D24] border border-slate-200 dark:border-slate-800 rounded-xl p-6 mt-6 shadow-sm">
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-8">{result.timeline.title}</h3>
         <div className="space-y-6">
           {result.timeline.items.map((item, idx) => (
             <div key={idx} className="relative pl-8 border-l-2 border-slate-700 pb-2 last:pb-0">
-              <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-emerald-500"></div>
+              <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-50 dark:bg-slate-900 border-2 border-emerald-500"></div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                <h4 className="text-sm font-semibold text-white">{item.event}</h4>
-                <span className="text-[10px] sm:self-start font-mono text-emerald-400 px-2 py-0.5 bg-emerald-500/10 rounded">{item.date}</span>
+                <h4 className="text-sm font-semibold text-slate-900 dark:text-white">{item.event}</h4>
+                <span className="text-[10px] sm:self-start font-mono text-emerald-600 dark:text-emerald-400 px-2 py-0.5 bg-emerald-500/10 rounded">{item.date}</span>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">{item.description}</p>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>
@@ -153,14 +153,14 @@ export function RadarContabil() {
 
   return (
     <section id="assistente" className="flex-1 flex flex-col gap-4">
-      <h2 className="text-xl font-semibold flex items-center gap-2 text-white">
+      <h2 className="text-xl font-semibold flex items-center gap-2 text-slate-900 dark:text-white">
         <span className="w-2 h-6 bg-amber-500 rounded-full"></span>
         <Bot size={20} className="text-amber-400" />
         Assistente Contábil de IA
       </h2>
 
-      <div className="bg-[#1A1D24] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col">
-        <p className="text-sm text-slate-400 mb-6 leading-relaxed">
+      <div className="bg-white dark:bg-[#1A1D24] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col">
+        <p className="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
           Para agregar valor real ao negócio, desenvolvi este assistente integrado à web. 
           Pergunte sobre atualizações fiscais, mudanças de alíquotas ou as últimas obrigações do SPED (ex: "Qual a novidade do ICMS em SP?"):
         </p>
@@ -168,18 +168,18 @@ export function RadarContabil() {
         <form onSubmit={handleSearch} className="flex flex-col gap-4 mb-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <span className="text-xs font-mono text-slate-500 uppercase font-bold tracking-widest">Modo de Resposta:</span>
-            <div className="flex bg-slate-900 rounded-lg p-1 border border-slate-800">
+            <div className="flex bg-slate-50 dark:bg-slate-900 rounded-lg p-1 border border-slate-200 dark:border-slate-800">
               <button
                 type="button"
                 onClick={() => setResponseMode('completa')}
-                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'completa' ? 'bg-indigo-500 text-white shadow-md' : 'text-slate-500 hover:text-slate-300'}`}
+                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'completa' ? 'bg-indigo-500 text-white shadow-md' : 'text-slate-500 hover:text-slate-700 dark:text-slate-300'}`}
               >
                 Detalhada
               </button>
               <button
                 type="button"
                 onClick={() => setResponseMode('simples')}
-                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'simples' ? 'bg-emerald-500 text-white shadow-md' : 'text-slate-500 hover:text-slate-300'}`}
+                className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all duration-300 \${responseMode === 'simples' ? 'bg-emerald-500 text-white shadow-md' : 'text-slate-500 hover:text-slate-700 dark:text-slate-300'}`}
               >
                 Direta & Simples
               </button>
@@ -193,7 +193,7 @@ export function RadarContabil() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Ex: Últimas notícias sobre a reforma tributária..."
-                className="w-full bg-slate-900 border border-slate-700 rounded-lg pl-10 pr-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors focus:ring-1 focus:ring-indigo-500"
+                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-700 rounded-lg pl-10 pr-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors focus:ring-1 focus:ring-indigo-500"
               />
               <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
             </div>
@@ -216,10 +216,10 @@ export function RadarContabil() {
         )}
 
         {result && (
-          <div className="mt-4 bg-slate-900 border border-slate-800 rounded-xl p-6 text-sm text-slate-300 transition-all duration-500 ease-in-out">
-            <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-800/50 text-[10px] uppercase font-mono tracking-widest text-slate-500">
+          <div className="mt-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 text-sm text-slate-700 dark:text-slate-300 transition-all duration-500 ease-in-out">
+            <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-200 dark:border-slate-800/50 text-[10px] uppercase font-mono tracking-widest text-slate-500">
               <span>Resultado da IA</span>
-              <span className={responseMode === 'completa' ? 'text-indigo-400' : 'text-emerald-400'}>
+              <span className={responseMode === 'completa' ? 'text-indigo-400' : 'text-emerald-600 dark:text-emerald-400'}>
                 Modo: {responseMode === 'completa' ? 'Detalhado' : 'Direto & Simples'}
               </span>
             </div>

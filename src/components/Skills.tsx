@@ -60,7 +60,7 @@ export function Skills() {
 
   return (
     <div className="flex flex-col gap-6">
-      <section id="skills" className="bg-[#1A1D24] border border-slate-800 rounded-2xl p-6">
+      <section id="skills" className="bg-white dark:bg-[#1A1D24] border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
          <h3 className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-6 flex items-center gap-2">
            <Code2 size={16} />
            Habilidades Técnicas
@@ -68,9 +68,9 @@ export function Skills() {
          
          {loading ? (
            <div className="animate-pulse flex flex-wrap gap-2">
-             <div className="h-6 w-24 bg-slate-800 rounded"></div>
-             <div className="h-6 w-32 bg-slate-800 rounded"></div>
-             <div className="h-6 w-20 bg-slate-800 rounded"></div>
+             <div className="h-6 w-24 bg-slate-200 dark:bg-slate-800 rounded"></div>
+             <div className="h-6 w-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
+             <div className="h-6 w-20 bg-slate-200 dark:bg-slate-800 rounded"></div>
            </div>
          ) : (
            <div className="flex flex-wrap gap-2">
@@ -81,7 +81,7 @@ export function Skills() {
                  whileInView={{ opacity: 1, scale: 1 }} 
                  viewport={{ once: true }} 
                  transition={{ delay: index * 0.05 }}
-                 className="px-3 py-1 text-xs font-mono rounded bg-slate-900 border border-slate-800 text-slate-300"
+                 className="px-3 py-1 text-xs font-mono rounded bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300"
                >
                  {skill.name}
                </motion.span>
@@ -90,7 +90,7 @@ export function Skills() {
          )}
       </section>
 
-      <section id="languages" className="bg-[#1A1D24] border border-slate-800 rounded-2xl p-6">
+      <section id="languages" className="bg-white dark:bg-[#1A1D24] border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
          <h3 className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-6 flex items-center gap-2">
            <Languages size={16} />
            Idiomas
@@ -98,8 +98,8 @@ export function Skills() {
          
          {loading ? (
            <div className="animate-pulse space-y-3">
-             <div className="h-4 bg-slate-800 rounded w-1/2"></div>
-             <div className="h-4 bg-slate-800 rounded w-1/3"></div>
+             <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-1/2"></div>
+             <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-1/3"></div>
            </div>
          ) : (
            <div className="space-y-4">
@@ -112,8 +112,8 @@ export function Skills() {
                   transition={{ delay: index * 0.1 }}
                   className="flex justify-between items-center"
                 >
-                  <span className="text-sm font-semibold text-white">{lang.name}</span>
-                  <span className="text-xs font-mono text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded">{lang.proficiency}</span>
+                  <span className="text-sm font-semibold text-slate-900 dark:text-white">{lang.name}</span>
+                  <span className="text-xs font-mono text-indigo-600 dark:text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded">{lang.proficiency}</span>
                 </motion.div>
               ))}
            </div>
