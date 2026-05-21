@@ -2,16 +2,11 @@ import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-
-interface PersonalInfo {
-  full_name: string;
-  headline: string;
-  bio: string;
-  avatar_url?: string;
-}
+import { PersonalInfo } from '../types/database';
+import { getLocalizedField } from '../utils/i18nHelper';
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [info, setInfo] = useState<PersonalInfo | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -37,8 +32,8 @@ export function Hero() {
   }, []);
 
   const displayName = info?.full_name || t('hero.title');
-  const displayHeadline = info?.headline || t('hero.subtitle');
-  const displayBio = info?.bio || t('hero.description');
+  const displayHeadline = info ? getLocalizedField(info, 'headline', i18n.language) : t('hero.subtitle');
+  const displayBio = info ? getLocalizedField(info, 'bio', i18n.language) : t('hero.description');
   const displayInitials = displayName.substring(0, 2).toUpperCase();
 
   return (

@@ -9,8 +9,12 @@ export function PersonalInfoForm() {
   const [formData, setFormData] = useState({
     id: '',
     full_name: '',
-    headline: '',
-    bio: '',
+    headline_pt: '',
+    headline_en: '',
+    headline_es: '',
+    bio_pt: '',
+    bio_en: '',
+    bio_es: '',
     email: '',
     phone: '',
     location: '',
@@ -54,8 +58,12 @@ export function PersonalInfoForm() {
         .from('personal_info')
         .update({
           full_name: formData.full_name,
-          headline: formData.headline,
-          bio: formData.bio,
+          headline_pt: formData.headline_pt,
+          headline_en: formData.headline_en,
+          headline_es: formData.headline_es,
+          bio_pt: formData.bio_pt,
+          bio_en: formData.bio_en,
+          bio_es: formData.bio_es,
           email: formData.email,
           phone: formData.phone,
           location: formData.location,
@@ -115,27 +123,9 @@ export function PersonalInfoForm() {
           />
         </div>
         
-        <div className="md:col-span-2">
-          <label className="block text-sm font-medium mb-1">Cargo / Headline</label>
-          <input
-            type="text"
-            name="headline"
-            value={formData.headline}
-            onChange={handleChange}
-            className="w-full px-4 py-2 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none"
-          />
-        </div>
 
-        <div className="md:col-span-2">
-          <label className="block text-sm font-medium mb-1">Biografia Profissional</label>
-          <textarea
-            name="bio"
-            rows={4}
-            value={formData.bio}
-            onChange={handleChange}
-            className="w-full px-4 py-2 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none resize-y"
-          />
-        </div>
+
+
 
         <div>
           <label className="block text-sm font-medium mb-1">Telefone / WhatsApp</label>
