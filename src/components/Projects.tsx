@@ -2,17 +2,12 @@ import { motion } from 'motion/react';
 import { FolderGit2, ExternalLink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
-  link: string;
-}
+import { useTranslation } from 'react-i18next';
+import { Project } from '../types/database';
+import { getLocalizedField } from '../utils/i18nHelper';
 
 export function Projects() {
+  const { i18n } = useTranslation();
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -60,13 +55,13 @@ export function Projects() {
               <div className="overflow-hidden bg-slate-800 aspect-video relative">
                 <img 
                   src={project.image} 
-                  alt={project.title} 
+                  alt={getLocalizedField(project, 'title', i18n.language)}
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-50 dark:from-slate-900 via-slate-50/40 dark:via-slate-900/40 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                  <h3 className="text-sm font-bold text-slate-900 dark:text-white drop-shadow-md">{project.title}</h3>
+                  <h3 className="text-sm font-bold text-slate-900 dark:text-white drop-shadow-md">{getLocalizedField(project, 'title', i18n.language)}</h3>
                   <ExternalLink size={14} className="text-emerald-600 dark:text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <a href={project.link} className="absolute inset-0 z-10">
@@ -75,7 +70,7 @@ export function Projects() {
               </div>
               
               <div className="p-4 flex-1 flex flex-col">
-                <p className="text-xs text-slate-600 dark:text-slate-400 mb-4 flex-1 leading-relaxed">{project.description}</p>
+                <p className="text-xs text-slate-600 dark:text-slate-400 mb-4 flex-1 leading-relaxed">{getLocalizedField(project, 'description', i18n.language)}</p>
                 <div className="flex gap-2 flex-wrap">
                   {project.tags.map((tag, i) => (
                      <span key={i} className="px-2 py-1 text-[9px] font-mono rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 uppercase">
